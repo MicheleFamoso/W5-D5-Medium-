@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*nav*/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav img {
+  width: 40%;
+}
+nav {
+  padding: 1em 0.8em;
+  background-color: #ffc017;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: black 1px solid;
+}
+nav li {
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  font-size: 0.6em;
+}
+nav li ul:nth-child(1),
+nav li ul:nth-child(2),
+nav li ul:nth-child(3) {
+  display: none;
+}
+
+button {
+  font-size: 0.7em;
+  color: white;
+  border: none;
+  background-color: black;
+  padding: 0.8em 1em;
+  border-radius: 25px;
+  margin-left: 1em;
+}
+/* First Section*/
+svg {
+  display: none;
+}
+.FirstSect {
+  background-color: #ffc017;
+  height: 15em;
+  border-bottom: black 1px solid;
+  padding: 1em 0.8em;
+}
+H1 {
+  font-family: "Spectral", serif;
+  font-size: 3em;
+  font-weight: 500;
+  margin-top: 1em;
+}
+.FirstSect div {
+  width: 19em;
+}
+.FirstSect p {
+  margin-top: 1em;
+}
+.FirstSect button {
+  margin-top: 3em;
+  margin-left: 0;
+  padding: 0.6em 2.5em;
+}
+/* Second Section*/
+.SecSect {
+  padding: 1em 0.8em;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+.trend {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.trend h3 {
+  margin-left: 1.5em;
+}
+.title {
+  display: flex;
+  margin: 0.7em 0;
+}
+.title h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(204, 204, 204);
+  margin-right: 0.5em;
+}
+.title h3 {
+  font-weight: bold;
+  margin: 0.4em 0;
+}
+.TCont {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+}
+.TCont h4 {
+  margin-left: 0.5em;
+  font-size: 0.7em;
+}
+.TCont img {
+  width: 1.5em;
+  border-radius: 100%;
+}
+
+.Data {
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+  font-size: 0.8em;
+}
+/*Disc*/
+.Discover {
+  padding: 1em 0.8em;
+}
+.Discover h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.Discover div {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.Discover p {
+  margin: 0.2em;
+  border: 1px solid rgb(204, 204, 204);
+  color: rgb(148, 148, 148);
+  padding: 0.3em 0.5em;
+}
+/*Article*/
+.Articles {
+  padding: 1em 0.8em;
+}
+.Articles p {
+  color: rgb(148, 148, 148);
+}
+.ArtMenu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ArtMenu p {
+  margin: 0.5em 0.5em;
+  font-size: 0.8em;
+}
+
+.article {
+  display: flex;
+  margin-bottom: 1em;
+  padding: 1em 0.8em;
+}
+
+.ATitle {
+  display: flex;
+  align-items: center;
+  font-size: 0.7em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.ATitle h4 {
+  font-size: 0.8em;
+}
+.ATitle img {
+  width: 10%;
+  border-radius: 100%;
+  margin-right: 0.5em;
+}
+.ACont {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.ACont h3 {
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-bottom: 0.3em;
+}
+.ACont p {
+  font-size: 0.5em;
+  color: gray;
+}
+.Article div {
+  width: 100%;
+}
+
+.AFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.4em;
+}
+.AF1 {
+  display: flex;
+  align-items: center;
+}
+.AF1 img {
+  width: 15%;
+}
+.AF1 p {
+  font-size: 0.5em;
+  margin-right: 0.5em;
+}
+.article > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.article > div:last-child img {
+  width: 90%;
+  object-fit: contain;
+}
+.AF1 p:nth-child(5) {
+  background-color: gainsboro;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+}
+.Articles {
+  padding-bottom: 2em;
+}
+/*Tablet*/
+@media screen and (min-width: 567px) {
+  nav {
+    padding: 1em 2em;
+  }
+  nav img {
+    width: 25%;
+  }
+  nav li ul:nth-child(1),
+  nav li ul:nth-child(2),
+  nav li ul:nth-child(3) {
+    display: block;
+    margin-left: 1em;
+  }
+  nav ul {
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 4em;
+    margin-top: 0.5em;
+    z-index: 1;
+  }
+  .Discover {
+    padding: 0 2em;
+  }
+  .FirstSect {
+    display: flex;
+
+    position: relative;
+    overflow: hidden;
+  }
+  .FirstSect div {
+    width: 380px;
+    padding: 1em 2em;
+  }
+  svg {
+    display: block;
+    z-index: 0;
+    position: absolute;
+    right: -333px;
+  }
+  .trend {
+    width: 100%;
+  }
+  .SecSect {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em 2em;
+  }
+  .ArtMenu {
+    padding: 0 2em;
+  }
+  .title {
+    width: 300px;
+  }
+  .article {
+    padding: 1em 2em;
+    justify-content: space-between;
+  }
+  .ACont {
+    width: 440px;
+  }
+  .article > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .article div:nth-child(2) img {
+    width: 50%;
+  }
+  .ATitle img {
+    width: 5%;
+  }
+  .ACont p {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  nav {
+    padding: 1em 5em;
+  }
+  nav img {
+    width: 15%;
+  }
+  .FirstSect {
+    padding: 0 5em;
+  }
+  .FirstSect div {
+    padding: 0;
+  }
+  svg {
+    right: -500px;
+  }
+  .SecSect {
+    padding: 1em 5em;
+  }
+  .title {
+    margin: 2em 0;
+    margin-right: 1em;
+  }
+  .Dsk {
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .Desktop {
+    width: 500px;
+  }
+  .ACont p {
+    font-size: 1em;
+  }
+}
